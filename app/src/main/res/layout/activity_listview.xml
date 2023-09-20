@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        app:cardCornerRadius="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iconNews"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:transitionName="img"
+            android:scaleType="centerCrop"
+            tools:ignore="UnusedAttribute"
+            
+            />
+        <ImageView
+            android:id="@+id/shadow_bottom"
+            android:src="@drawable/bottom_shadow"
+            android:layout_alignBottom="@id/iconNews"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:drawablePadding="10dp"
+            android:layout_height="30dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:layout_marginRight="160dp"
+            android:text="Thể loại"
+            android:gravity="bottom"
+            android:layout_alignLeft="@id/textTitle"
+            android:layout_alignRight="@id/layoutDate"
+            android:layout_alignTop="@id/layoutDate"
+            android:layout_alignStart="@id/textTitle"
+            android:layout_alignEnd="@id/layoutDate"
+            android:id="@+id/id_theloai"/>
+        <FrameLayout
+            android:id="@+id/layoutDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iconNews"
+            android:background="@drawable/round_white"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="-50dp"
+
+            >
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_date"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="10dp"
+                android:text="01/01/2000"
+                android:textColor="#606060"
+                android:id="@+id/id_date"/>
+
+        </FrameLayout>
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextTitle"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Title"
+            android:fontFamily="sans-serif-light"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/iconNews"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/textTitle"
+            android:src="@drawable/thanhnien"
+            android:id="@+id/img_nguon"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:id="@+id/min_ago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+
+            android:layout_below="@id/textTitle"
+            android:fontFamily="sans-serif-light"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorDesc"
+            android:text="50 phút trước"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+<!--    <LinearLayout-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_weight="3"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_gravity="center"-->
+<!--            >-->
+<!--            <ImageView-->
+<!--                android:id="@+id/iconNews"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+
+
+<!--                android:src="@drawable/iconnews"-->
+<!--                tools:ignore="RtlCompat" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottoid_date="10dp"-->
+<!--            android:layout_weight="7"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textTitle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="7dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:gravity="left"-->
+<!--                android:text="Hà Nội thêm 1 ca dương tính COVID-19 với lịch trình phức tạp"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="17sp" />-->
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/id_theloai"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:text="@string/theloai"-->
+<!--                        android:textSize="10sp" />-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/img_nguon"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="15dp"-->
+<!--                        android:layout_marginLeft="25dp"-->
+
+<!--                        android:src="@drawable/thanhnien" />-->
+<!--                </LinearLayout>-->
+
+
+<!--                <ImageView-->
+<!--                    android:layout_width="10dp"-->
+<!--                    android:layout_height="10dp"-->
+<!--                    android:layout_marginTop="4dp"-->
+<!--                    android:src="@drawable/ic_calendar" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/id_date"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_weight="0.75"-->
+<!--                    android:text="@string/date"-->
+<!--                    android:textSize="10sp" />-->
+
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+
+
+</LinearLayout>

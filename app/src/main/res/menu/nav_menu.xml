@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+<group android:checkableBehavior="single">
+
+    <item android:id="@+id/nav_Moi"
+        android:title="Mới"
+        />
+    <item android:id="@+id/nav_ThoiSu"
+        android:title="Thời sự"
+        />
+    <item android:id="@+id/nav_KinhTe"
+        android:title="Kinh tế"
+        />
+    <item android:id="@+id/nav_TheThao"
+        android:title="Thể thao"
+        />
+    <item android:id="@+id/nav_DocLa"
+        android:title="Độc &amp; Lạ"
+        />
+    <item android:id="@+id/nav_CuocSong"
+        android:title="Cuộc sống"
+        />
+    <item android:id="@+id/nav_GiaiTri"
+        android:title="Giải trí"
+        />
+
+</group>
+    <item android:title="Thông tin">
+        <menu>
+            <item
+                android:id="@+id/nav_downloads"
+                android:title="Tải xuống"
+                android:icon="@drawable/ic_download"/>
+            <item
+                android:id="@+id/nav_thongKe"
+                android:title="Thống kê"
+                android:icon="@drawable/ic_bar_chart"/>
+            <item
+                android:id="@+id/nav_setting"
+                android:title="Cài đặt nguồn báo"
+                android:icon="@drawable/ic_settings"/>
+            <item
+                android:id="@+id/nav_info"
+                android:title="Thông tin"
+                android:icon="@drawable/ic_info"/>
+
+        </menu>
+
+
+    </item>
+</menu>

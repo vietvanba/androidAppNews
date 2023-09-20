@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">VietNam News</string>
+    <string name="login">Đăng nhập</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="text_forgot_password">Forgot password? No worries</string>
+    <string name="button_sign_in">Sign in</string>
+    <string name="text_signin_signup">Sign up</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="name_user">Nguyễn Văn A</string>
+
+    <string name="text_info_Username">Tên đăng nhập : Admin</string>
+    <string name="text_info_BirthDay">Ngày sinh : 01/01/1990</string>
+    <string name="text_info_AccountDay">Ngày tạo tài khoản : 01/01/1990</string>
+    <string name="et_info">Sửa thông tin</string>
+    <string name="ql_tk">Quản lý tài khoản</string>
+    <string name="ql_bb">Quản lý bài viết</string>
+    <string name="text_themBao">Thêm bài báo</string>
+    <string name="theloai">Thể loại :</string>
+    <string name="views">Lượt xem :</string>
+    <string name="tacgia">Tác giả :</string>
+    <string name="date">Ngày đăng :</string>
+    <string name="log_out">Đăng xuất</string>
+    <string name="like">Yêu thích</string>
+    <string name="download">Tải xuống</string>
+    <string name="comment">Bình luận</string>
+    <string name="downloaddone">Đã tải xuống</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="verify_code">Xác thực</string>
+</resources>
